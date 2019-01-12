@@ -1719,7 +1719,7 @@ int main(int argc, char* argv[])
         } else if (compact_flag == 1) {
             printf("%3.2f ", apower);
         } else {
-            printf("Active Apparent Power: %3.2f VA \n", apower);
+            printf("Apparent Power: %3.2f VA \n", apower);
         }
     }
 
@@ -1731,7 +1731,7 @@ int main(int argc, char* argv[])
         } else if (compact_flag == 1) {
             printf("%3.2f ", rapower);
         } else {
-            printf("Reactive Apparent Power: %3.2f VAR \n", rapower);
+            printf("Reactive Power: %3.2f VAR \n", rapower);
         }
     }
 
