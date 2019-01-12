@@ -1680,11 +1680,11 @@ int main(int argc, char* argv[])
         voltage = getMeasureFloat(ctx, VOLTAGE, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_V(%3.2f*V)\n", device_address, voltage);
+            printf("%d_V(%3.6f*V)\n", device_address, voltage);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", voltage);
+            printf("%3.6f ", voltage);
         } else {
-            printf("Voltage: %3.2f V \n",voltage);
+            printf("Voltage: %3.6f V \n",voltage);
         }
     }
 
@@ -1692,11 +1692,11 @@ int main(int argc, char* argv[])
         current  = getMeasureFloat(ctx, CURRENT, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_C(%3.2f*A)\n", device_address, current);
+            printf("%d_C(%3.6f*A)\n", device_address, current);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", current);
+            printf("%3.6f ", current);
         } else {
-            printf("Current: %3.2f A \n",current);
+            printf("Current: %3.6f A \n",current);
         }
     }
 
@@ -1704,11 +1704,11 @@ int main(int argc, char* argv[])
         power = getMeasureFloat(ctx, POWER, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_P(%3.2f*W)\n", device_address, power);
+            printf("%d_P(%3.6f*W)\n", device_address, power);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", power);
+            printf("%3.6f ", power);
         } else {
-            printf("Power: %3.2f W \n", power);
+            printf("Power: %3.6f W \n", power);
         }
     }
 
@@ -1716,11 +1716,11 @@ int main(int argc, char* argv[])
         apower = getMeasureFloat(ctx, APOWER, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_VA(%3.2f*VA)\n", device_address, apower);
+            printf("%d_VA(%3.6f*VA)\n", device_address, apower);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", apower);
+            printf("%3.6f ", apower);
         } else {
-            printf("Apparent Power: %3.2f VA \n", apower);
+            printf("Apparent Power: %3.6f VA \n", apower);
         }
     }
 
@@ -1728,11 +1728,11 @@ int main(int argc, char* argv[])
         rapower = getMeasureFloat(ctx, RAPOWER, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_VAR(%3.2f*VAR)\n", device_address, rapower);
+            printf("%d_VAR(%3.6f*VAR)\n", device_address, rapower);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", rapower);
+            printf("%3.6f ", rapower);
         } else {
-            printf("Reactive Power: %3.2f VAR \n", rapower);
+            printf("Reactive Power: %3.6f VAR \n", rapower);
         }
     }
 
@@ -1740,11 +1740,11 @@ int main(int argc, char* argv[])
         pf = getMeasureFloat(ctx, PFACTOR, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_PF(%3.2f*F)\n", device_address, pf);
+            printf("%d_PF(%3.6f*F)\n", device_address, pf);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", pf);
+            printf("%3.6f ", pf);
         } else {
-            printf("Power Factor: %3.2f \n", pf);
+            printf("Power Factor: %3.6f \n", pf);
         }
     }
 
@@ -1752,11 +1752,11 @@ int main(int argc, char* argv[])
         pangle = getMeasureFloat(ctx, PANGLE, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_PA(%3.2f*Dg)\n", device_address, pangle);
+            printf("%d_PA(%3.6f*Dg)\n", device_address, pangle);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", pangle);
+            printf("%3.6f ", pangle);
         } else {
-            printf("Phase Angle: %3.2f Degree \n", pangle);
+            printf("Phase Angle: %3.6f Degree \n", pangle);
         }
     }
 
@@ -1764,11 +1764,11 @@ int main(int argc, char* argv[])
         freq = getMeasureFloat(ctx, FREQUENCY, num_retries, 2);
         read_count++;
         if (metern_flag == 1) {
-            printf("%d_F(%3.2f*Hz)\n", device_address, freq);
+            printf("%d_F(%3.6f*Hz)\n", device_address, freq);
         } else if (compact_flag == 1) {
-            printf("%3.2f ", freq);
+            printf("%3.6f ", freq);
         } else {
-            printf("Frequency: %3.2f Hz \n", freq);
+            printf("Frequency: %3.6f Hz \n", freq);
         }
     }
 
