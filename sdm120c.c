@@ -1086,7 +1086,6 @@ int main(int argc, char* argv[])
     opterr = 0;
 
     while ((c = getopt (argc, argv, "a:Ab:BcCd:D:efgij:lmM:nN:oOpP:qr:R:s:S:tTvw:W:xy:z:12")) != -1) {
-        log_message(debug_flag | DEBUG_SYSLOG, "optind = %d, argc = %d, c = %c, optarg = %s", optind, argc, c, optarg);
 
         switch (c)
         {
@@ -1367,6 +1366,8 @@ int main(int argc, char* argv[])
                 usage(programName);
                 exit(EXIT_FAILURE);
         }
+
+        log_message(debug_flag | DEBUG_SYSLOG, "optind = %d, argc = %d, c = %c, optarg = %s", optind, argc, c, optarg);
     }
 
     log_message(debug_flag, "cmdline=\"%s\"", cmdline);
